@@ -1,0 +1,61 @@
+To: cygwin-announce@cygwin.com
+Subject: Updated: package N.N
+Subject: New package: suck 4.3.2-1 -- Small newsfeed from an NNTP server with standard NNTP commands
+
+PACKAGE DESCRIPTION
+===================
+
+Homepage: http://packages.debian.org/suck
+License : Public Domain
+
+This package contains software for copying news from an NNTP server to
+your local machine, and copying replies back up to an NNTP server. The
+suck/rpost combination allows you to run your own INN/CNEWS site,
+controlling where you get your news, and where you post outgoing
+articles. Suck/rpost use only standard NNTP commands that are used by
+your favorite news reader (like tin, knews, trn) such as POST and
+ARTICLE. If you can use tin or knews against an NNTP site, than you
+can use Suck/Rpost and have multiple site feeds.
+
+CHANGES SINCE LAST RELEASE
+==========================
+
+None.
+
+INSTALL OR UPGRADE NOTES
+========================
+
+Standard install.
+
+CYGWIN INSTALLATION INFORMATION
+===============================
+
+To install this package, click on the "Install Cygwin now" link on the
+<http://cygwin.com/> web page. This downloads setup.exe to your
+system. Then, run setup and answer all of the questions. You'll find
+the package listed in the "All" category. After installation, read the
+documentation at directories:
+
+    /usr/share/doc/<package-version>/*
+    /usr/share/doc/Cygwin/<package-version>.README
+
+If you have questions or comments, please send them to the Cygwin
+mailing list at <cygwin@cygwin.com>.
+
+CYGWIN-ANNOUNCE UNSUBSCRIBE INFO
+================================
+
+This message has been sent to cygwin-announce list.
+
+If you want to unsubscribe from the mailing list, look at the
+"List-Unsubscribe: " tag in the email header of this message. Send
+email to the address specified there. It will be in the format:
+
+    cygwin-announce-unsubscribe-you=yourdomain.com@cygwin.com
+
+More information on unsubscribing can be found:
+
+    http://sources.redhat.com/lists.html#unsubscribe-simple
+
+Please read *all* of the information on unsubscribing that is available
+starting at the above URL.

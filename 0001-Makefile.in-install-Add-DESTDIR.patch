@@ -1,0 +1,46 @@
+From f8068512e92ff164f2efc72390f9887497aaa923 Mon Sep 17 00:00:00 2001
+From: Jari Aalto <jari.aalto@cante.net>
+Date: Tue, 26 Feb 2008 21:57:40 +0200
+Subject: [PATCH] Makefile.in: (install): Add DESTDIR
+
+Signed-off-by: Jari Aalto <jari.aalto@cante.net>
+---
+ Makefile.in |   18 ++++++++++--------
+ 1 files changed, 10 insertions(+), 8 deletions(-)
+
+diff --git a/Makefile.in b/Makefile.in
+index 1dd2592..9da924c 100644
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -178,18 +178,20 @@ install: install_bin install_man
+ install_bin: suck rpost testhost lmove
+ 	- mkdir -p $(bindir)
+ 	- strip -s suck rpost testhost lmove
+-	$(INSTALL_PROGRAM) suck $(bindir)/suck
+-	$(INSTALL_PROGRAM) rpost $(bindir)/rpost
+-	$(INSTALL_PROGRAM) testhost $(bindir)/testhost
+-	$(INSTALL_PROGRAM) lmove $(bindir)/lmove
++	$(INSTALL_PROGRAM) -d $(DESTDIR)$(bindir)
++	$(INSTALL_PROGRAM) suck $(DESTDIR)$(bindir)/suck
++	$(INSTALL_PROGRAM) rpost $(DESTDIR)$(bindir)/rpost
++	$(INSTALL_PROGRAM) testhost $(DESTDIR)$(bindir)/testhost
++	$(INSTALL_PROGRAM) lmove $(DESTDIR)$(bindir)/lmove
+ 
+ install_man: $(MAN)/suck.1 $(MAN)/rpost.1 $(MAN)/testhost.1 $(MAN)/lmove.1
+ 	- mkdir -p $(mandir)
+ 	- rm -f $(mandir)/lpost.$(manext)
+-	$(INSTALL_DATA) $(MAN)/suck.1 $(mandir)/suck.$(manext)
+-	$(INSTALL_DATA) $(MAN)/rpost.1 $(mandir)/rpost.$(manext)
+-	$(INSTALL_DATA) $(MAN)/testhost.1 $(mandir)/testhost.$(manext)
+-	$(INSTALL_DATA) $(MAN)/lmove.1 $(mandir)/lmove.$(manext)
++	$(INSTALL_PROGRAM) -d $(DESTDIR)$(mandir)
++	$(INSTALL_DATA) $(MAN)/suck.1 $(DESTDIR)$(mandir)/suck.$(manext)
++	$(INSTALL_DATA) $(MAN)/rpost.1 $(DESTDIR)$(mandir)/rpost.$(manext)
++	$(INSTALL_DATA) $(MAN)/testhost.1 $(DESTDIR)$(mandir)/testhost.$(manext)
++	$(INSTALL_DATA) $(MAN)/lmove.1 $(DESTDIR)$(mandir)/lmove.$(manext)
+ 
+ #install_sman: $(SMAN)/suck.1 $(SMAN)/rpost.1 $(SMAN)/testhost.1 $(SMAN)/lpost.1
+ #	$(MAKE) -C $(SMAN)
+-- 
+1.5.3.8
+

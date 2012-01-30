@@ -1,0 +1,2 @@
+tag1: suck
+  http://packages.debian.org/unstable/suck pregexp:orig.tar.gz file:suck_4.3.2.orig.tar.gz new: x:

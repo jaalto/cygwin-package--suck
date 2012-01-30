@@ -1,0 +1,77 @@
+suck
+------------------------------------------
+
+Small newsfeed from an NNTP server with standard NNTP commands
+
+This package contains software for copying news from an NNTP server to
+your local machine, and copying replies back up to an NNTP server. The
+suck/rpost combination allows you to run your own INN/CNEWS site,
+controlling where you get your news, and where you post outgoing
+articles. Suck/rpost use only standard NNTP commands that are used by
+your favorite news reader (like tin, knews, trn) such as POST and
+ARTICLE. If you can use tin or knews against an NNTP site, than you
+can use Suck/Rpost and have multiple site feeds.
+
+NOTE: Suck will not work with obsolete NNTP servers that can't handle
+the xhdr command.
+
+Runtime requirements:
+  cygwin
+  openssl
+  libgdbm4
+
+Build requirements:
+  cygwin
+  openssl-devel
+  libgdbm4
+
+Canonical homepage:
+  http://packages.debian.org/suck
+
+Canonical download:
+  See above
+
+Version control repository:
+
+Mailing list:
+
+Forum / Wiki:
+
+IRC channel:
+
+Upstream contact:
+  - Maintainer address unknown
+  Maintainer: Tim Smith
+  Bugs:
+
+License:
+  Public Domain
+
+Language:
+  C
+
+------------------------------------------
+
+Build instructions:
+  unpack suck-*-src.tar.bz2
+    if you use setup to install this src package, it will be
+    unpacked under /usr/src automatically
+  cd /usr/src
+  ./suck*.sh all
+
+------------------------------------------
+
+Files included in the binary distribution:
+  See content of *.tar.gz
+
+------------------------------------------
+
+Port Notes:
+- Directoried perl/ and java/ offer example code, so they are
+  installed under /usr/share/doc/suck-*/
+
+----- version 4.3.2-1 -----
+- Initial release 2008-02-24 Jari Aalto
+
+Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
+Copyright (C) 2008 Jari Aalto; Licensed under GPL v2 or later
