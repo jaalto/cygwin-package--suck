@@ -16,12 +16,10 @@ NOTE: Suck will not work with obsolete NNTP servers that can't handle
 the xhdr command.
 
 Runtime requirements:
-  cygwin
-  openssl
+  libopenssl100
   libgdbm4
 
 Build requirements:
-  cygwin
   openssl-devel
   libgdbm4
 
