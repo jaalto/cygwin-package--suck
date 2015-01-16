@@ -1,6 +1,5 @@
 To: cygwin-announce@cygwin.com
-Subject: Updated: package N.N
-Subject: New package: suck 4.3.2-1 -- Small newsfeed from an NNTP server with standard NNTP commands
+Subject: Updated: suck 4.3.2-2 -- Small newsfeed from an NNTP server with standard NNTP commands
 
 PACKAGE DESCRIPTION
 ===================
@@ -24,6 +23,8 @@ None.
 
 INSTALL OR UPGRADE NOTES
 ========================
+
+Rebuilt with linopenssl100. No user visible changes.
 
 Standard install.
 

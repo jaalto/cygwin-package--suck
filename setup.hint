@@ -8,4 +8,4 @@ your favorite news reader (like tin, knews, trn) such as POST and
 ARTICLE. If you can use tin or knews against an NNTP site, than you
 can use Suck/Rpost and have multiple site feeds."
 category: Net
-requires: cygwin openssl libgdbm4
+requires: cygwin libopenssl100 libgdbm4

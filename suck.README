@@ -62,7 +62,7 @@ Build instructions:
 ------------------------------------------
 
 Files included in the binary distribution:
-  See content of *.tar.gz
+  See Cygwin package archive
 
 ------------------------------------------
 
@@ -70,8 +70,11 @@ Port Notes:
 - Directoried perl/ and java/ offer example code, so they are
   installed under /usr/share/doc/suck-*/
 
+----- version 4.3.2-2 -----
+- 2015-01-16 rebuilt with libopenssl100 (libopenssl098 deprecated).
+
 ----- version 4.3.2-1 -----
 - Initial release 2008-02-24 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2008 Jari Aalto; Licensed under GPL v2 or later
+Copyright (C) 2008-2015 Jari Aalto; Licensed under GPL v2 or later
