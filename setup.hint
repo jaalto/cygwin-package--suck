@@ -9,4 +9,3 @@ ARTICLE. If you can use tin or knews against an NNTP site, than you
 can use Suck/Rpost and have multiple site feeds."
 category: Net
 requires: libopenssl100 libgdbm4
-
