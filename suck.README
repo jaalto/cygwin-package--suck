@@ -21,7 +21,7 @@ Runtime requirements:
 
 Build requirements:
   openssl-devel
-  libgdbm4
+  libgdbm-devel
 
 Canonical homepage:
   http://packages.debian.org/suck
@@ -68,6 +68,10 @@ Port Notes:
 - Directoried perl/ and java/ offer example code, so they are
   installed under /usr/share/doc/suck-*/
 
+----- version 4.3.2-3 -----
+- 2016-1011 Rebuilt with libgdbm-devel 1.12-1
+- https://cygwin.com/ml/cygwin-apps/2016-10/msg00009.html
+
 ----- version 4.3.2-2 -----
 - 2015-01-16 rebuilt with libopenssl100 (libopenssl098 deprecated).
 
@@ -75,4 +79,4 @@ Port Notes:
 - Initial release 2008-02-24 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2008-2015 Jari Aalto; Licensed under GPL v2 or later
+Copyright (C) 2008-2016 Jari Aalto; Licensed under GPL v2 or later
